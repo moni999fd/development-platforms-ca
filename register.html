@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | News Platform</title>
+
+    <!--  GLOBAL STYLES -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <nav class="nav">
+        <div class="nav-left">
+          <a id="navHome" href="./index.html">Home</a>
+          <a id="navCreate" href="./create-article.html" class="hidden">
+            Create Article
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <a id="navLogin" href="./login.html">Login</a>
+          <a id="navRegister" href="./register.html">Register</a>
+
+          <span id="navUser" class="pill hidden"></span>
+          <button id="navLogout" class="btn hidden" type="button">
+            Logout
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1>Create account</h1>
+      <p class="muted">
+        Use your <strong>@stud.noroff.no</strong> email.
+      </p>
+
+      <form id="registerForm" class="card">
+        <label>
+          Email
+          <input
+            type="email"
+            id="email"
+            placeholder="name@stud.noroff.no"
+            required
+          />
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="password" required />
+        </label>
+
+        <button type="submit" class="btn">Register</button>
+
+        <p class="notice muted">
+          Already have an account?
+          <a href="./login.html">Login</a>
+        </p>
+
+        <p id="registerMessage" class="notice"></p>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 2026 News Platform
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="./js/supabaseClient.js"></script>
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/register.js"></script>
+  </body>
+</html>

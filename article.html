@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <nav class="nav">
+        <div class="nav-left">
+          <a id="navHome" href="./index.html">Home</a>
+          <a id="navCreate" href="./create-article.html" class="hidden">Create Article</a>
+        </div>
+
+        <div class="nav-right">
+          <a id="navLogin" href="./login.html">Login</a>
+          <a id="navRegister" href="./register.html">Register</a>
+
+          <span id="navUser" class="pill hidden"></span>
+          <button id="navLogout" class="btn hidden" type="button">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div id="articleDetails" class="card">
+        <p class="muted">Loading article…</p>
+      </div>
+    </main>
+
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/article.js"></script>
+
+    <footer class="footer">
+  © 2026 News Platform
+</footer>
+  </body>
+</html>

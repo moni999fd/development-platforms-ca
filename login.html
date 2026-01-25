@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Platform</title>
+    <title>Login | News Platform</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
@@ -29,20 +29,31 @@
     </nav>
   </header>
 
-  <main class="container">
-  <header class="page-head">
-    <h1>News Platform</h1>
-    <p class="muted">Latest articles from our community.</p>
-  </header>
+    <main class="container">
+      <h1>Login</h1>
 
-  <section id="articles" class="grid"></section>
-</main>
+      <form id="loginForm" class="card">
+        <label>
+          Email
+          <input id="email" type="email" required placeholder="name@stud.noroff.no" />
+        </label>
 
-<script type="module" src="./js/auth.js"></script>
-<script type="module" src="./js/articles.js"></script>
+        <label>
+          Password
+          <input id="password" type="password" required minlength="6" />
+        </label>
 
-<footer class="footer">
+        <button type="submit" class="btn">Login</button>
+
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <footer class="footer">
+
   © 2026 News Platform
 </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Article</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR (same as other pages) -->
+    <header class="navbar">
+      <nav class="nav">
+        <div class="nav-left">
+          <a id="navHome" href="./index.html">Home</a>
+          <a id="navCreate" href="./create-article.html" class="hidden">Create Article</a>
+        </div>
+
+        <div class="nav-right">
+          <a id="navLogin" href="./login.html">Login</a>
+          <a id="navRegister" href="./register.html">Register</a>
+
+          <span id="navUser" class="pill hidden"></span>
+          <button id="navLogout" class="btn hidden" type="button">
+            Logout
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Create Article</h1>
+
+      <form id="articleForm" class="card">
+        <label>
+          Title
+          <input type="text" id="title" required />
+        </label>
+
+        <label>
+          Category
+          <input type="text" id="category" required />
+        </label>
+
+        <label>
+          Body
+          <textarea id="body" rows="6" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Publish Article</button>
+
+        <p id="formMessage" class="message"></p>
+      </form>
+    </main>
+
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/create-article.js"></script>
+  </body>
+</html>
