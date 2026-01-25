@@ -115,9 +115,3 @@ Using Supabase is very effective for fast development, while a custom API provid
 
 AI tools were used during this project as a learning resource to explain concepts, debug issues, and help structure the application. All code was reviewed, tested, and understood by me. AI was not used to blindly generate code without comprehension.
 
-```
-
-```
-
-```
-
